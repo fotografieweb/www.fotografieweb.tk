@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<title>Fotografie App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("http://www.fotografille.nl/wp-content/uploads/2014/04/FF_inspiratie_zwart-wit_JurgenHeckel_04.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Fotografie App / <H10> YourieCramerFotografie </H10></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#About" class="w3-bar-item w3-button">Over</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-address-book"></i> Hulpjes</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Widgets</a>
+  	  <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Over</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Fotografie App</span><br>
+    
+    <span class="w3-large">De leukste App van Nederland!</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Lees meer</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+     <i class="fa fa-facebook-official w3-hover-opacity"></i> Yourie Cramer Fotografie
+	 
+	 <br>
+    <i class="fa fa-instagram w3-hover-opacity"></i> Yourie_Cramer_Fotografie
+    
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <b><h3 class="w3-center">Hallo,</h3>
+  <p class="w3-center w3-large">YourieCramerFotografie</p></b>
+ 
+  
+    
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+     
+  
+  Bedankt voor het downloaden van de app.<br >
+  Ik zal mij even voorstellen aan jullie.<br >
+  Ik ben Yourie Cramer en ben 15 jaar oud.<br >
+  In het dagelijks leven ben ik bezig als app maken en fotograaf.<br >
+  Hopelijk vinden jullie de app handig.<br >
+  </ br>
+  Weet je even niet meer hoe je dat ene effect toevoegd aan de foto? geen probleem daar helpt deze app je mee.
+      <p><a href="#work" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Bekijken</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://zwartwit010.nl/wp-content/uploads/%C2%A9MXDmedia-%C2%A9zw010-1179-2.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">Hulp bij fotografie</h3>
+  <p class="w3-center w3-large">Als je even niet meer weet hoe je dat ene effect krijgt.</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://defotoblogger.r.worldssl.net/wp-content/uploads/2016/09/9806830783_8fb1d266b2_k-1-1024x603.jpg" WIDTH="380" HEIGHT="223" style="width:100%">
+        <div class="w3-container">
+          <h3>Lichtstrepen in het donker</h3>
+          <p class="w3-opacity">Lichtstrepen op de foto en lantaarn licht veranderd in sterretjes.</p>
+		  
+<html>
+<body>
+
+<details>
+  <summary>Uitleg lezen!<br ></summary>
+  <p>Wat heb je nodig><br ></p>
+  <p><br>
+
+
+- Je camera + lens<br >
+- Afstandsbediening<br >
+- Goed statief<br >
+
+<br >
+<b>Hoe?</b><br >
+Diafragma op: F22
+Zet je sluitertijd op ongeveer 12 seconden of meer.<br >
+Tip: Gerbuik een goed statief + afstandsbediening.
+</br > </p>
+</details>
+</body>
+</html>
+
+ <center><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-camera"></i></center>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://photographyicon.com/wp-content/uploads/2012/10/example-pf-panning-in-photography-8016339224_182d745215_o-960.jpg" WIDTH="380" HEIGHT="223" style="width:100%">
+        <div class="w3-container">
+          <h3>Snelheid in een foto (panning)</h3>
+          <p class="w3-opacity">Snelheid in een foto.</p>
+		  <br >
+<html>
+<body>
+
+<details>
+  <summary>Uitleg lezen!<br ></summary>
+  <p>Wat heb je nodig><br ></p>
+  <p><br>
+
+
+- Je camera + lens<br >
+
+<br >
+<b>Hoe?</b><br >
+Diafragma op: ongeveer F8 of hoger.<br >
+Zet je sluitertijd op ongeveer 1/13 seconden<br >
+Zet je camera op continu focus. <br >
+Druk op de sluiterknop en volg je onderwerp.<br >
+Tip: Gebruik juist geen statief dit belemmerd je in je beweging en ga zo dicht mogelijk bij je onderwep staan.
+</br > </p>
+</details>
+</body>
+</html>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-camera"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://cdn-files.cloud/wp-content/blogs.dir/68/files/2015/12/Eenvoudige-bokeh-fotografie-tips.jpg" WIDTH="380" HEIGHT="223" style="width:100%">
+        <div class="w3-container">
+          <h3>Sluitertijd & Diafragma</h3>
+          <p class="w3-opacity">Bij Zonnige onbewolkte dag.</p>
+          <br>
+<html>
+<body>
+
+<details>
+  <summary>Uitleg lezen!<br ></summary>
+  <p>>Alle combinaties leveren een exact dezelfde belichting op: de juiste voor die zonnige, onbewolkte dag. De ISO blijft in alle gevallen op ISO100 staan.<br ><br ></p>
+  <p><br>
+
+
+f/2,8  f/4    f/5,6<br >
+1/500  1/250  1/125<br >  
+<br >
+f/8  f/11  f/16  f/22  f/32<br >
+1/60 1/30  1/15  1/8   1/4<br >
+</details>
+</body>
+</html>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-camera"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://cdn-files.cloud/wp-content/blogs.dir/68/files/2015/12/Eenvoudige-bokeh-fotografie-tips.jpg" WIDTH="380" HEIGHT="223" style="width:100%">
+        <div class="w3-container">
+          <h3>Sluitertijd & Diafragma</h3>
+          <p class="w3-opacity">Bij een bewolkte hemel.</p>
+          <br>
+<details>
+  <summary>Uitleg lezen!<br ></summary>
+  <p>>Alle combinaties leveren een exact dezelfde belichting op: de juiste voor die zonnige, onbewolkte dag. De ISO blijft in alle gevallen op ISO100 staan.<br ><br ></p>
+  <p><br>
+
+
+f/2,8  f/4    f/5,6<br >
+1/500  1/250  1/125<br >
+<br >
+f/8  f/11  f/16  f/22  f/32<br >
+1/60 1/30  1/15  1/8   1/4<br >
+</details>
+</body>
+</html>
+
+
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-camera"></i></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Uitleg -->
+
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center"></h3>
+  <p class="w3-center w3-large"></p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://defotoblogger.r.worldssl.net/wp-content/uploads/2016/09/9806830783_8fb1d266b2_k-1-1024x603.jpg" WIDTH="380" HEIGHT="223" style="width:100%">
+        <div class="w3-container">
+          <h3>Diafragma</h3>
+          <p class="w3-opacity">Welk effect bij welke F waarde?</p>
+          <br >
+<details>
+  <summary>Uitleg lezen!<br ></summary>
+  <p>>Alle combinaties leveren een exact dezelfde belichting op: de juiste voor die zonnige, onbewolkte dag. De ISO blijft in alle gevallen op ISO100 staan.<br ><br ></p>
+  <p><br>
+
+
+Bij een groot diafragma (f/1.4) zul je zien dat er maar een klein deel scherp is op de foto.<br >
+<br >
+Bij een klein diafragma (f/32) zul je zien dat heel veel scherp is op de foto.<br >
+</details>
+</body>
+</html>
+ <center><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-camera"></i></center>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://photographyicon.com/wp-content/uploads/2012/10/example-pf-panning-in-photography-8016339224_182d745215_o-960.jpg" WIDTH="380" HEIGHT="223" style="width:100%">
+        <div class="w3-container">
+          <h3>Welke sluitertijd kies je?</h3>
+          <p class="w3-opacity">Bevriezen, beweging?</p>
+		  <br >
+<html>
+<body>
+
+<details>
+  <summary>Uitleg lezen!<br ></summary>
+  <p> Instellen van de sluitertijd<br ></p>
+  <p><br>
+
+<br >
+-De sluitertijd moet niet te kort zijn, want dan wordt de foto te donker. De sluitertijd moet ook niet te lang zijn, want dan wordt de foto onscherp.<br >
+
+-De juiste sluitertijd wordt bepaald door de volgende factoren:<br >
+<br >
+Fotografeer je uit de hand of van statief?<br >
+Beweegt je onderwerp? <br >
+Wil je je onderwerp bevriezen of kies je voor beweging?<br >
+<br >
+
+Onderwerp:<br >   | Beweging bevrieen<br >
+<br >              <br >
+Bewegend blaadje; | <1/125s <br >
+Stromend beekje;  | <1/250s<br >
+Fontein;          | <1/500s<br >
+Fietser;          | <1/500s<br >
+Auto;             | <1/1000s<br >
+Vliegtuig;        | <1/1000s<br >
+</br > </p>
+</details>
+
+
+
+</body>
+</html>
+<p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-camera"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://cdn-files.cloud/wp-content/blogs.dir/68/files/2015/12/Eenvoudige-bokeh-fotografie-tips.jpg" WIDTH="380" HEIGHT="223" style="width:100%">
+        <div class="w3-container">
+          <h3>De sluitertijd bij paarden</h3>
+          <p class="w3-opacity">Sluitertijd bij paarden fotografie.</p>
+		  <br >
+<html>
+<body>
+
+<details>
+  <summary>Uitleg lezen!<br ></summary>
+  <p>Een vuistregel voor paarden. de sluitertijd is het volgende:><br ></p>
+  <p><br>
+
+  <br >
+-sluitertijd van 1/200 of sneller voor een stilstaand paard.<br >
+-sluitertijd van 1/250 of sneller voor een paard in stap.<br >
+-sluitertijd van 1/400 of sneller voor een paard in draf.<br >
+-sluitertijd van 1/500 of sneller voor een paard in galop.<br >
+<br >
+Als een paard op je af komt kan je de sluitertijd iets (1 stop) verlagen.<br >
+
+</br > <p>
+</details>
+
+
+</body>
+</html>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-camera"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://cdn-files.cloud/wp-content/blogs.dir/68/files/2015/12/Eenvoudige-bokeh-fotografie-tips.jpg" WIDTH="380" HEIGHT="223" style="width:100%">
+        <div class="w3-container">
+          <h3>Cropfactor</h3>
+          <p class="w3-opacity">De cropfactor.</p>
+          <br>
+<details>
+  <summary>Uitleg lezen!<br ></summary>
+  <p>Hoe werkt het?<br ><br ></p>
+  <p><br>
+-Bij een fulframe camera: Wanneer je een 35-mm lens gebruikt gedraagd de lens zich ook als een 35-mm lens.<br >
+<br >
+-Bij een camera met een APS-C sensor krijg je te maken met een crop factor.<br > een APS-C sensor zit meestal in de instap spiegelreflex camera's, dit houdt in dat hij een kleiner beeld pakt, dan wat je beeld eigenlijk vankt. Daardoor wordt er eigenlijk als het ware ingezoomt.<br > 
+<br >
+-De crop-factor van een NIKON APS-C = 1.5.<br >
+-De crop-factor van een CANON APS-C = 1.6.<br >
+<br >
+Dit houdt in wanneer je een 50mm objectief gebruikt, zou dit op een fullframe camera 50mm zijn, maar wanneer je een lens op een camera zet met een APS-C sensor dan wordt die 50mm lens een 75mm lens, want:<br >
+<br >
+- Bij een NIKON camera: 50mm objectief x 1.5 crop-factor = 75mm.<br >
+- Bij een Canon camera: 50mm objectief x 1.6 crop factor = 80mm.<br >
+</details>
+</body>
+</html>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-camera"></i></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+   <pre><a href="mailto:youriecramerfotografdie@outlook.com" class="w3-bar-item w3-button"><i class="fa fa-address-book"> | </i>youriecramerfotografie@outlook.com</a><pre/>
+  </div>
+  <div class="w3-quarter">
+    <pre><a href="" class="w3-bar-item w3-button"><i class="fa fa-facebook-official w3-hover-opacity"></i>|Yourie Cramer Fotografie<pre/>
+  </div>
+  <div class="w3-quarter">
+    
+  </div>
+  <div class="w3-quarter">
+    
+  </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Contact openemen</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Nederland</p>
+      
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: youriecramerfotografie@outlook.com</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Naam" required name="Naam"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Onderwerp" required name="Onderwerp"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Bericht" required name="Bericht"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> Bericht versturen
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-half">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by YourieCramerFotografie</p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+<html>
+<head></head>
+<body>
+<iframe src="https://www.facebook.com/youriecramerfotografie/" style="width:100%;height:100%">
+</body>
+</html>
+-->
+
+</body>
+</html>
